@@ -22,6 +22,7 @@ aside{
     height: 100vh;
     float: left;
     width: 230px;
+    overflow: hidden;
 
 }
 
@@ -29,18 +30,18 @@ header{
     float: left;
     height: 80px;
     width: calc( 100% - 230px );
-    background-color: pink;
-    opacity: 0.1;
+    background-color: rgba(18, 18, 18, 0.98);
+
 }
 
 main{
 
-    background-color: green;
+    background-color: rgba(18, 18, 18, 0.98);
     float: left;
     width: calc( 100% - 230px );
     height: calc( 100vh - 80px );
     overflow: scroll;
-
+    color: white;
     padding-bottom: 500px;
 
 }
@@ -48,7 +49,7 @@ main{
 footer{
     height: 100px;
     width: 100%;
-    background-color: red;
+    background-color: #282828;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -59,6 +60,9 @@ footer{
     margin: 20 auto;
 }
 
+.scheda img{
+    object-fit: contain;
+}
 
 .nava ul li{
     margin: 10px 20px;
@@ -88,12 +92,23 @@ footer{
     margin: 20px;
 }
 
-.crea p{
-    color: #b3b3b3;
-    margin: 10px 20px;
+.crea ul li{
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
-.crea svg{
+.crea ul li a{
+    text-decoration: none;
+    color: #b3b3b3;
+
+}
+
+.crea ul li i{
+    font-size: 30px;
+}
+
+
+.crea i{
     color: #b3b3b3;
     height: 20px;
 
@@ -111,7 +126,18 @@ footer{
     margin: 40px 20px 0;
 }
 
+.install i{
+    color: #b3b3b3;
+}
+
+
+
 /* fine ASIDE */
+
+
+.navb{
+
+}
 
 .upgrade{
     display: flex;
@@ -122,6 +148,11 @@ footer{
 .upgrade button{
 
     margin: 20px;
+    padding: 10px 20px;
+    background-color: rgba(18, 18, 18, 0.98);
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
 
 
 }
@@ -129,12 +160,20 @@ footer{
 .song{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 
 
 }
 
 .scheda p{
     text-align: center;
+    padding-top: 10px;
+}
+
+
+.creato-per{
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .played{
@@ -152,6 +191,7 @@ footer{
     padding: 10px 10px 40px;
 
 
+
 }
 
 .nav-c{
@@ -159,6 +199,11 @@ footer{
     justify-content: center;
 }
 
+.nav-c ul li a{
+    font-size: 12px;
+    color: #b3b3b3;
+    text-decoration: none;
+}
 
 .song-2{
     display: flex;
@@ -183,19 +228,17 @@ footer{
 }
 
 .parte{
+    width: 33%;
+    color: white;
 
-    border: solid 1px black;
 }
 
 
-.parte{
+.part-one{
     display: flex;
 
 }
 
-.parte{
-    width: 33%;
-}
 
 .cuore i{
     height: 20px;
@@ -213,4 +256,52 @@ footer{
 
 .miniicon{
     padding: 40px;
+
+}
+
+.simbol{
+    text-align: center;
+}
+
+.simbol i{
+    font-size: 18px;
+    padding: 10px;
+
+}
+
+.musicplayer{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.riga{
+    height: 2px;
+    width: 400px;
+    background-color: grey;
+    margin: 12px 10px;
+
+}
+
+.part-three{
+    display: flex;
+    justify-content: flex-end;
+    margin: 40px 5px
+}
+
+
+.riga-bis{
+    height: 2px;
+    width: 100px;
+    background-color: grey;
+    margin: 10px 10px;
+
+}
+
+.part-three i{
+    padding: 0 8px;
+}
+
+#grey{
+    color: #b3b3b3;
 }

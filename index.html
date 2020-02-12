@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Soitify</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/fb0ae73ee5.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -24,8 +24,8 @@
 
                     <nav class="nava">
                         <ul>
-                            <li><i class="material-icons">home</i> <p> Home</p></li>
-                            <li><i class="material-icons"> search </i> <p>Cerca</p></li>
+                            <li><i class="fas fa-home"></i> <p> Home</p></li>
+                            <li><i class="fas fa-search"></i> <p>Cerca</p></li>
                             <li><svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="currentColor"></path></svg> <p>La tua libreria</p></li>
                         </ul>
                     </nav>
@@ -40,30 +40,28 @@
 
                         <div class="crea">
 
-                            <svg xmlns="http://www.w3.org/2000/svg" class="CreatePlaylistButton__svg" shape-rendering="crispEdges" viewBox="0 0 36 36"><path class="CreatePlaylistButton__svg-plus-path" d="m28 20h-8v8h-4v-8h-8v-4h8v-8h4v8h8v4z"></path></svg>
-                            <p> Crea playlist</p>
+                        <ul>
+                            <li> <i> <i class="fas fa-plus-square"></i></i> <a href="#">Crea playlist</a></li>
+                            <li><a href="#"> Nuova playlist</a></li>
+                            <li><a href="#"> Nuova playlist</a></li>
+                            <li><a href="#"> Nuova playlist</a></li>
+                            <li><a href="#"> Nuova playlist</a></li>
+                            <li><a href="#"> Nuova playlist</a></li>
+                            <li><a href="#"> Nuova playlist</a></li>
+                            <li><a href="#"> Nuova playlist</a></li>
+                        </ul>
 
+
+
+                    </div>
+
+                    <div class="end">
+
+                        <div class="install">
+                            <i class="far fa-arrow-alt-circle-down"></i>
+                            <a href="#"> Installa App</a>
 
                         </div>
-
-                        <div class="list">
-
-
-
-                            <ul>
-                                <li>Nuova playlist</li>
-                                <li>Nuova playlist</li>
-                                <li>Nuova playlist</li>
-                                <li>Nuova playlist</li>
-                                <li>Nuova playlist</li>
-                                <li>Nuova playlist</li>
-                                <li>Nuova playlist</li>
-                            </ul>
-
-                        </div>
-
-
-
 
                     </div>
 
@@ -115,35 +113,35 @@
                             <div class="scheda">
                                 <img src="https://picsum.photos/150/180" alt="">
                                 <p>Song</p>
-                                <p>Artist</p>
+                                <p id="grey">Artist</p>
 
                             </div>
                             <div class="scheda">
                                 <img src="https://picsum.photos/150/180" alt="">
                                 <p>Song</p>
-                                <p>Artist</p>
+                                <p id="grey">Artist</p>
                             </div>
                             <div class="scheda">
                                 <img src="https://picsum.photos/150/180" alt="">
                                 <p>Song</p>
-                                <p>Artist</p>
+                                <p id="grey">Artist</p>
 
                             </div>
                             <div class="scheda">
                                 <img src="https://picsum.photos/150/180" alt="">
                                 <p>Song</p>
-                                <p>Artist</p>
+                                <p id="grey">Artist</p>
                             </div>
                             <div class="scheda">
                                 <img src="https://picsum.photos/150/180" alt="">
                                 <p>Song</p>
-                                <p>Artist</p>
+                                <p id="grey">Artist</p>
 
                             </div>
                             <div class="scheda">
                                 <img src="https://picsum.photos/150/180" alt="">
                                 <p>Song</p>
-                                <p>Artist</p>
+                                <p id="grey">Artist</p>
 
                             </div>
 
@@ -153,7 +151,7 @@
 
                             <div class="played">
                                 <h4>Creato per Lorenzo Lulli</h4>
-                                <p>Più ascolti, più accurati saranno i suggerimenti</p>
+                                <p id="grey">Più ascolti, più accurati saranno i suggerimenti</p>
                             </div>
 
                             <div class="song-2">
@@ -179,7 +177,7 @@
 
                             <div class="played">
                                 <h4>Artisti più popolari</h4>
-                                <p>Più ascolti, più accurati saranno i suggerimenti</p>
+                                <p id="grey">Più ascolti, più accurati saranno i suggerimenti</p>
                             </div>
 
                             <div class="song-2">
@@ -212,28 +210,56 @@
 
             <div class="container-f">
 
-                <div class="parte">
+                <div class="parte part-one">
 
                     <div class="minipic larg">
                         <img src="https://picsum.photos/60/60" alt="">
                     </div>
                     <div class="minitit larg">
                         <p>Titolo Canzone</p>
-                        <p> Artista</p>
+                        <p id="grey"> Artista</p>
                     </div>
                     <div class="miniicon cuore larg">
 
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-heart"></i>
+                        <i id="grey" class="far fa-heart"></i>
+                        <i id="grey" class="far fa-folder"></i>
 
 
                     </div>
 
                 </div>
-                <div class="parte">
+                <div class="parte part-two">
+
+                    <div class="simbol">
+
+                        <i class="fas fa-random"></i>
+                        <i class="fas fa-step-backward"></i>                        <i class="far fa-play-circle"></i>
+                        <i class="fas fa-step-forward"></i>
+                        <i class="fas fa-redo"></i>
+
+                    </div>
+
+                    <div class="musicplayer">
+
+                        <p> 00.00 </p>
+
+                        <div class="riga">
+
+                        </div>
+
+                        <p> 5.00 </p>
+
+                    </div>
 
                 </div>
-                <div class="parte">
+                <div class="parte part-three">
+
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-desktop"></i>
+                    <i class="fas fa-volume-up"></i>
+                    <div class="riga-bis">
+
+                    </div>
 
                 </div>
 
