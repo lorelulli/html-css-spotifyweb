@@ -13,18 +13,20 @@
 
 body{
     position: relative;
+    overflow: hidden;
 
 }
 
 aside{
 
-    background-color: black;
-    height: 100vh;
+    display: flex;
     float: left;
-    width: 230px;
-    overflow: hidden;
+    height: 100vh;
+    overflow-y: hidden;
 
 }
+
+
 
 header{
     float: left;
@@ -47,25 +49,66 @@ main{
 }
 
 footer{
-    height: 100px;
-    width: 100%;
-    background-color: #282828;
+
     position: fixed;
     bottom: 0;
     left: 0;
+    display: flex;
+    flex-shrink: 2;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    aside{
+        width: 70px;
+
+    }
+
+    header{
+        width: calc( 100% - 70px );
+    }
+
+    main{
+        width: calc( 100% - 70px );
+    }
+
 }
 
 .container-a{
-    width: 80%;
-    margin: 20 auto;
+
+    padding: 20px;
+    background-color: black;
+    width: 230px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    justify-content: space-between;
+
+
 }
+
+#spo{
+    display: none;
+}
+
+
+.end{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
 
 .scheda img{
     object-fit: contain;
 }
 
 .nava ul li{
-    margin: 10px 20px;
+
 }
 
 .nava ul li i{
@@ -89,11 +132,11 @@ footer{
 
 .logo img{
     height: 40px;
-    margin: 20px;
+    margin-bottom: 20px;
 }
 
 .crea ul li{
-    margin-left: 20px;
+
     margin-top: 10px;
 }
 
@@ -123,21 +166,64 @@ footer{
 
 .tit h4{
     color: #b3b3b3;
-    margin: 40px 20px 0;
+    margin: 10px 20px 0;
 }
 
 .install i{
     color: #b3b3b3;
+    border-bottom: 1px
+}
+
+.install{
+    border-bottom: 0.1px solid #b3b3b3;
+    padding-bottom: 10px;
 }
 
 
+@media screen and (max-width: 768px) {
+
+    .nava ul li p{
+        display: none;
+    }
+
+    .nava ul li i{
+        font-size: 25px;
+        padding-bottom: 50px;
+    }
+
+    .play{
+        display: none;
+    }
+
+    .install a{
+        display: none;
+    }
+
+    .install{
+        border: none;
+    }
+
+    .install i{
+        font-size: 30px;
+    }
+
+    #spo{
+        height: 30px;
+        color: white;
+        display: inherit;
+        margin-bottom: 20px;
+    }
+
+    #spoti{
+        display: none;
+    }
+
+}
 
 /* fine ASIDE */
 
 
-.navb{
 
-}
 
 .upgrade{
     display: flex;
@@ -220,15 +306,24 @@ footer{
 }
 
 
+.scheda img{
+    padding: 10px;
+}
+
 /* FINE MAIN */
 
 .container-f{
+
+    height: 100px;
+    width: 100vw;
+    background-color: #282828;
     display: flex;
     justify-content: space-between;
+    flex-shrink: 1;
 }
 
 .parte{
-    width: 33%;
+    
     color: white;
 
 }
