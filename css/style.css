@@ -21,7 +21,7 @@ aside{
 
     display: flex;
     float: left;
-    height: 100vh;
+    height: calc( 100vh - 100px );
     overflow-y: hidden;
 
 }
@@ -58,7 +58,7 @@ footer{
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
 
     aside{
         width: 70px;
@@ -77,15 +77,15 @@ footer{
 
 .container-a{
 
-    padding: 20px;
+    padding: 15px;
     background-color: black;
     width: 230px;
     padding-bottom: 50px;
     display: flex;
     flex-direction: column;
-
-    position: relative;
     justify-content: space-between;
+    flex-shrink: 1;
+
 
 
 }
@@ -101,6 +101,7 @@ footer{
     flex-direction: column;
     justify-content: flex-end;
 }
+
 
 
 .scheda img{
@@ -177,9 +178,11 @@ footer{
 }
 
 .install{
-    margin-top: 50px;
+    margin-top: 20px;
     border-bottom: 0.1px solid #b3b3b3;
     padding-bottom: 10px;
+
+
 }
 
 .install a{
@@ -188,7 +191,7 @@ footer{
 }
 
 .nava ul li:hover{
-
+    padding-left: 5px;
     border-left: green 4px solid;
 }
 
@@ -213,7 +216,16 @@ footer{
     color: white;
 }
 
+
 @media screen and (max-width: 768px) {
+    .scheda {
+        transform: scale(1.1);
+        margin: 30px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
 
     .nava ul li a{
         display: none;
@@ -251,10 +263,20 @@ footer{
         display: none;
     }
 
+    .scheda {
+        transform: scale(1.2);
+        margin-top: 30px;
+    }
+
 }
 
 
 
+.fine-as{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
 
 /* fine ASIDE */
 
@@ -281,8 +303,10 @@ footer{
 
 .song{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    padding: 5px;
+
 
 
 }
@@ -305,6 +329,7 @@ footer{
 .played h4{
     color: white;
     font-size: 28px;
+    margin-bottom: 20px;
 }
 
 .nav-c ul li{
@@ -323,6 +348,7 @@ footer{
 .nav-c{
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .nav-c ul li a{
@@ -331,10 +357,20 @@ footer{
     text-decoration: none;
 }
 
+.nav-c:hover ul li{
+
+  content : "";
+  position: absolute;
+  left    : 25%;
+  bottom  : 0;
+  height  : 1px;
+  width   : 50%;  /* or 100px */
+  border-bottom:1px solid green;
+
+}
+
 .song-2{
     display: flex;
-
-
 }
 
 .song-2 .scheda{
